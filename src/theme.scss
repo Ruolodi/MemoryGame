@@ -33,10 +33,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  width: 100px;
-  height: 100px;
-  margin: 0 20px 0 20px;
+  background-color: rgb(155, 70, 70);
+  width: 5vmax;
+  height: 5vmax;
+  margin: 10px 20px 10px 20px;
   border-radius: 10px;
 }
 .cards.disabled {
