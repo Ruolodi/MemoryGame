@@ -33,8 +33,6 @@ export default {
       this.isNumber = items
       this.cardsCheck[id] = true
       console.log(this.cardsCheck)
-
-      this.idSaver = id
       console.log("id", id)
     },
     clickCards1(items, id) {
