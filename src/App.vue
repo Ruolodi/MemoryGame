@@ -22,7 +22,20 @@ export default {
   data() {
     return {
       cards: ["4", "2", "3", "4", "1", "2", "3", "1", "5", "6", "5", "6"],
-      cardsCheck: [false, false, false, false, false, false, false, false],
+      cardsCheck: [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+      ],
       isClicked: false,
       isNumber: "",
       isNumber1: "",
@@ -52,6 +65,10 @@ export default {
       } else {
         setTimeout(() => {
           this.cardsCheck = [
+            false,
+            false,
+            false,
+            false,
             false,
             false,
             false,
