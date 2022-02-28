@@ -4,7 +4,7 @@ body {
   background-color: rgb(15, 5, 30);
 }
 p {
-  font-size: 30px;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -15,18 +15,18 @@ p {
   transform: translate(-50%, -50%);
   background-color: rgb(135, 120, 160);
   border-radius: 20px;
-  width: 50vmax;
-  height: 500px;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
 }
 .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-auto-rows: 70px;
   background-color: rgb(255, 255, 255);
-  margin: 50px auto 0 auto;
-  width: 45vmax;
-  height: 400px;
+  margin: 0 auto 0 auto;
+  width: 250px;
+  height: fit-content;
   border-radius: 10px;
 }
 .cards {
@@ -34,12 +34,23 @@ p {
   justify-content: center;
   align-items: center;
   background-color: rgb(155, 70, 70);
-  width: 5vmax;
-  height: 5vmax;
+  
   margin: 10px 20px 10px 20px;
   border-radius: 10px;
 }
 .cards.disabled {
   background-color: rgb(15, 5, 30);
   cursor: default;
+}
+.btn{
+  position: relative;
+  top:5px;
+  left:50%;
+  transform: translate(-50%);
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 5px;
+
 }

@@ -6,7 +6,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -87,7 +86,6 @@ button::-moz-focus-inner {
 
 .fade-enter-active,
 .fade-leave-active {
-  -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
 
@@ -98,7 +96,6 @@ button::-moz-focus-inner {
 
 .fadeQuestions-enter-active,
 .fadeQuestions-leave-active {
-  -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
 
@@ -108,18 +105,15 @@ button::-moz-focus-inner {
 }
 
 .slideQuiz-enter-active {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .slideQuiz-leave-active {
-  -webkit-transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slideQuiz-enter, .slideQuiz-leave-to {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  transform: translateX(10px);
   opacity: 0;
 }
 
@@ -133,7 +127,7 @@ body {
 }
 
 p {
-  font-size: 30px;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -141,46 +135,36 @@ p {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #8778a0;
   border-radius: 20px;
-  width: 50vmax;
-  height: 500px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-auto-rows: 70px;
   background-color: white;
-  margin: 50px auto 0 auto;
-  width: 45vmax;
-  height: 400px;
+  margin: 0 auto 0 auto;
+  width: 250px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 10px;
 }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #9b4646;
-  width: 5vmax;
-  height: 5vmax;
   margin: 10px 20px 10px 20px;
   border-radius: 10px;
 }
@@ -189,4 +173,19 @@ p {
   background-color: #0f051e;
   cursor: default;
 }
-/*# sourceMappingURL=theme.css.map */
+
+.btn {
+  position: relative;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 5px;
+}/*# sourceMappingURL=theme.css.map */
